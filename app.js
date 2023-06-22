@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 });
 
 // Mongoose-Verbindung herstellen
-mongoose.connect('mongodb+srv://Martin:' + encodeURIComponent('Jappy1994!') + '@cluster0.lp67urt.mongodb.net/heute?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://benutzername:' + encodeURIComponent('password') + '@cluster0.lp67urt.mongodb.net/datenbankname?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('MongoDB verbunden');
   })
