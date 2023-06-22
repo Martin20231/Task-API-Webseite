@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks API Demo</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="header">
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html" class="button">Startseite</a></li>
+        <li><a href="aufgaben.html" class="button">Aufgaben</a></li>
+        <li><a href="termin.html" class="button">Termin</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <center><h1>Tasks API Demo</h1></center>
+
+    <button id="getTasksButton">Termin abrufen</button>
+  
+    <h2>Neue Termin erstellen:</h2>
+    <form id="createTaskForm">
+      <input type="text" id="titleInput" placeholder="Titel" required>
+      <input type="text" id="descriptionInput" placeholder="Beschreibung">
+      <input type="text" id="dueDateInput" placeholder="Fälligkeitsdatum (YYYY-MM-DD)">
+      <input type="submit" value="Termin erstellen">
+    </form>
+  
+    <h2>Terminliste:</h2>
+    <ul id="tasksList"></ul>
+  
+  </div>
+
+  <script src="fetch1.js"></script>
+</body>
+</html>
